@@ -1,0 +1,36 @@
+//
+//  PrefixHeader.pch
+//  YaoDaoBingChu
+//
+//  Created by lanou3g on 15/7/13.
+//  Copyright (c) 2015年 zlwz. All rights reserved.
+//
+
+#ifndef YaoDaoBingChu_PrefixHeader_pch
+#define YaoDaoBingChu_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "BackImageView.h"
+#import "LORequestManger.h"
+
+//  1.判断是否为 ios7
+#define iOS7 ([UIDevice currentDevice].systemVersion.doubleValue >= 7.0f)
+
+
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
+//  随机颜色
+#define kColor [UIColor colorWithRed:arc4random()%255 / 255.0f green:arc4random()%255 / 255.0f blue:arc4random()%255 / 255.0f alpha:1]
+
+//  RGB 颜色
+#define kColor(r,g,b) ([UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1])
+
+#import "UITextView+YDTextView.h"
+
+
+
+
+#endif

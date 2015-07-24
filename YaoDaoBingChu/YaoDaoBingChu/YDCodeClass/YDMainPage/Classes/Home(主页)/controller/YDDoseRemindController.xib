@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YDDoseRemindController">
+            <connections>
+                <outlet property="drugName" destination="Ead-q6-2hn" id="QAE-wB-3kJ"/>
+                <outlet property="name" destination="GwY-ye-hlF" id="NrI-tI-o0X"/>
+                <outlet property="remark" destination="qYh-uX-AhZ" id="lgs-Em-g7G"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reminder_calendar" translatesAutoresizingMaskIntoConstraints="NO" id="SiL-gJ-RvC">
+                    <rect key="frame" x="20" y="250" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="Fmc-RD-eQT"/>
+                        <constraint firstAttribute="width" constant="22" id="MIk-QC-0Ka"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reminder_me_icon" translatesAutoresizingMaskIntoConstraints="NO" id="lUp-my-FzY">
+                    <rect key="frame" x="20" y="50" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="22" id="OuD-1S-Hi7"/>
+                        <constraint firstAttribute="height" constant="22" id="fJy-Mk-gbp"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reminder_drug_icon" translatesAutoresizingMaskIntoConstraints="NO" id="rrh-H4-441">
+                    <rect key="frame" x="20" y="90" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="9Bx-6Z-GjS"/>
+                        <constraint firstAttribute="width" constant="22" id="TXS-ok-DB0"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reminder_count" translatesAutoresizingMaskIntoConstraints="NO" id="IsG-Gt-4zZ">
+                    <rect key="frame" x="20" y="210" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="V1E-tf-w7B"/>
+                        <constraint firstAttribute="width" constant="22" id="vgp-LL-sxZ"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reminder_notice" translatesAutoresizingMaskIntoConstraints="NO" id="lOW-Hv-0X7">
+                    <rect key="frame" x="20" y="130" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="22" id="Ktv-Ie-hfl"/>
+                        <constraint firstAttribute="height" constant="22" id="eMs-Ul-D45"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="我" placeholder="服药者称呼" minimumFontSize="17" background="reminder_select_border" translatesAutoresizingMaskIntoConstraints="NO" id="GwY-ye-hlF">
+                    <rect key="frame" x="56" y="45" width="300" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="wuJ-L3-X3W"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="药品名称" minimumFontSize="17" background="reminder_select_border" translatesAutoresizingMaskIntoConstraints="NO" id="Ead-q6-2hn">
+                    <rect key="frame" x="56" y="85" width="300" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="eWB-Ev-o1R"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入备注" minimumFontSize="17" background="reminder_select_border" translatesAutoresizingMaskIntoConstraints="NO" id="qYh-uX-AhZ">
+                    <rect key="frame" x="56" y="125" width="300" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="caT-kr-g5v"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reminder_select_blue_border-1" translatesAutoresizingMaskIntoConstraints="NO" id="6MW-wK-ST0">
+                    <rect key="frame" x="20" y="168" width="22" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="26" id="4UZ-xt-kwi"/>
+                        <constraint firstAttribute="width" constant="22" id="Sfb-Pu-sYa"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MrZ-bU-et8">
+                    <rect key="frame" x="56" y="165" width="300" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Ld8-Hf-tHI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="不重复" backgroundImage="reminder_select_blue_border">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="Interval" destination="-1" eventType="touchUpInside" id="3xt-fQ-3p8"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFT-Mn-87K">
+                    <rect key="frame" x="56" y="205" width="300" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="WNY-0G-Xu5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="时间" backgroundImage="reminder_select_blue_border">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="time" destination="-1" eventType="touchUpInside" id="OzW-8f-WWq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNR-tf-y4r">
+                    <rect key="frame" x="56" y="245" width="300" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="V3y-LW-y8y"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="开始提醒" backgroundImage="reminder_select_blue_border">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="date" destination="-1" eventType="touchUpInside" id="FFv-6S-DEa"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="6MW-wK-ST0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="1Ht-1j-GiB"/>
+                <constraint firstAttribute="trailing" secondItem="EFT-Mn-87K" secondAttribute="trailing" constant="19" id="58M-dJ-t6T"/>
+                <constraint firstItem="Ead-q6-2hn" firstAttribute="leading" secondItem="rrh-H4-441" secondAttribute="trailing" constant="14" id="5oC-gQ-YLU"/>
+                <constraint firstItem="IsG-Gt-4zZ" firstAttribute="top" secondItem="6MW-wK-ST0" secondAttribute="bottom" constant="16" id="6kS-Xc-qf2"/>
+                <constraint firstItem="IsG-Gt-4zZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="6lQ-Vi-cLg"/>
+                <constraint firstItem="qYh-uX-AhZ" firstAttribute="top" secondItem="Ead-q6-2hn" secondAttribute="bottom" constant="10" id="7z7-oU-b9x"/>
+                <constraint firstItem="fNR-tf-y4r" firstAttribute="leading" secondItem="SiL-gJ-RvC" secondAttribute="trailing" constant="14" id="8lj-CZ-6iU"/>
+                <constraint firstAttribute="trailing" secondItem="fNR-tf-y4r" secondAttribute="trailing" constant="19" id="9Ie-FI-ta3"/>
+                <constraint firstItem="GwY-ye-hlF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="45" id="9pv-R4-GUv"/>
+                <constraint firstItem="EFT-Mn-87K" firstAttribute="top" secondItem="MrZ-bU-et8" secondAttribute="bottom" constant="10" id="DbJ-TV-lKI"/>
+                <constraint firstItem="lUp-my-FzY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="F6c-u6-ZLu"/>
+                <constraint firstItem="lOW-Hv-0X7" firstAttribute="top" secondItem="rrh-H4-441" secondAttribute="bottom" constant="18" id="IzH-YD-loU"/>
+                <constraint firstItem="rrh-H4-441" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="LGN-Vh-HYT"/>
+                <constraint firstItem="SiL-gJ-RvC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Mc3-aq-UH6"/>
+                <constraint firstItem="rrh-H4-441" firstAttribute="top" secondItem="lUp-my-FzY" secondAttribute="bottom" constant="18" id="NwF-du-DWd"/>
+                <constraint firstAttribute="trailing" secondItem="GwY-ye-hlF" secondAttribute="trailing" constant="19" id="P0R-FX-KNL"/>
+                <constraint firstItem="MrZ-bU-et8" firstAttribute="top" secondItem="qYh-uX-AhZ" secondAttribute="bottom" constant="10" id="SBH-6v-Efv"/>
+                <constraint firstItem="fNR-tf-y4r" firstAttribute="top" secondItem="EFT-Mn-87K" secondAttribute="bottom" constant="10" id="TIF-ij-8F3"/>
+                <constraint firstItem="lOW-Hv-0X7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Wcs-Pu-rXI"/>
+                <constraint firstItem="GwY-ye-hlF" firstAttribute="leading" secondItem="lUp-my-FzY" secondAttribute="trailing" constant="14" id="YYi-8E-SGW"/>
+                <constraint firstItem="qYh-uX-AhZ" firstAttribute="leading" secondItem="lOW-Hv-0X7" secondAttribute="trailing" constant="14" id="cZ1-cQ-r2J"/>
+                <constraint firstAttribute="trailing" secondItem="qYh-uX-AhZ" secondAttribute="trailing" constant="19" id="dYX-JU-diD"/>
+                <constraint firstItem="6MW-wK-ST0" firstAttribute="top" secondItem="lOW-Hv-0X7" secondAttribute="bottom" constant="16" id="duh-5O-ynN"/>
+                <constraint firstItem="SiL-gJ-RvC" firstAttribute="top" secondItem="IsG-Gt-4zZ" secondAttribute="bottom" constant="18" id="e87-Ft-kvz"/>
+                <constraint firstAttribute="trailing" secondItem="MrZ-bU-et8" secondAttribute="trailing" constant="19" id="fT3-Bb-V4G"/>
+                <constraint firstAttribute="trailing" secondItem="Ead-q6-2hn" secondAttribute="trailing" constant="19" id="fl3-ox-4FG"/>
+                <constraint firstItem="EFT-Mn-87K" firstAttribute="leading" secondItem="IsG-Gt-4zZ" secondAttribute="trailing" constant="14" id="nj3-So-GJz"/>
+                <constraint firstItem="lUp-my-FzY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="pLv-V6-cpD"/>
+                <constraint firstItem="MrZ-bU-et8" firstAttribute="leading" secondItem="6MW-wK-ST0" secondAttribute="trailing" constant="14" id="yfy-Xf-Nxg"/>
+                <constraint firstItem="Ead-q6-2hn" firstAttribute="top" secondItem="GwY-ye-hlF" secondAttribute="bottom" constant="10" id="zVk-eE-fe3"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="362.5" y="365.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="reminder_calendar" width="21" height="21"/>
+        <image name="reminder_count" width="21" height="21"/>
+        <image name="reminder_drug_icon" width="21" height="21"/>
+        <image name="reminder_me_icon" width="21" height="21"/>
+        <image name="reminder_notice" width="21" height="21"/>
+        <image name="reminder_select_blue_border" width="262" height="33"/>
+        <image name="reminder_select_blue_border-1" width="21" height="21"/>
+        <image name="reminder_select_border" width="262" height="33"/>
+    </resources>
+</document>

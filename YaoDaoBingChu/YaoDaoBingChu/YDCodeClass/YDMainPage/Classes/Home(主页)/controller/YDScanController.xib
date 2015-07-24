@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YDScanController">
+            <connections>
+                <outlet property="backImage" destination="IWb-fg-ci6" id="pW3-Xg-kln"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gib-gg-Kkr">
+                    <rect key="frame" x="0.0" y="600" width="375" height="67"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7F-mO-8Kb">
+                            <rect key="frame" x="323" y="15" width="32" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="32" id="2qW-v6-evp"/>
+                                <constraint firstAttribute="height" constant="32" id="Jie-ha-YwL"/>
+                            </constraints>
+                            <state key="normal" image="scan_open_flash_lamp">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="scan_close_flash_lamp"/>
+                            <connections>
+                                <action selector="light" destination="-1" eventType="touchUpInside" id="2G6-Qi-aDt"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPx-r6-FeL">
+                            <rect key="frame" x="20" y="15" width="32" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="0fZ-Db-ttr"/>
+                                <constraint firstAttribute="width" constant="32" id="9KU-9c-caD"/>
+                            </constraints>
+                            <state key="normal" image="scan_edit_code">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="edit" destination="-1" eventType="touchUpInside" id="Tja-aw-KHE"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="67" id="0jm-sZ-8w8"/>
+                        <constraint firstItem="ZPx-r6-FeL" firstAttribute="leading" secondItem="Gib-gg-Kkr" secondAttribute="leading" constant="20" id="0kL-QP-O4I"/>
+                        <constraint firstItem="ZPx-r6-FeL" firstAttribute="top" secondItem="Gib-gg-Kkr" secondAttribute="top" constant="15" id="1iG-fa-JeA"/>
+                        <constraint firstAttribute="bottom" secondItem="l7F-mO-8Kb" secondAttribute="bottom" constant="20" id="1iI-mB-N1u"/>
+                        <constraint firstAttribute="trailing" secondItem="l7F-mO-8Kb" secondAttribute="trailing" constant="20" id="E4q-E0-4Oz"/>
+                        <constraint firstAttribute="bottom" secondItem="ZPx-r6-FeL" secondAttribute="bottom" constant="20" id="WXl-S2-dYr"/>
+                        <constraint firstItem="l7F-mO-8Kb" firstAttribute="top" secondItem="Gib-gg-Kkr" secondAttribute="top" constant="15" id="wmU-c7-NF1"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请将条码置于取景器内扫描,距离大约10cm,尽量避免反光.开启闪光灯等有助于弱光条件下识别." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHE-tx-vwy">
+                    <rect key="frame" x="0.0" y="30" width="375" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Re3-qr-yo0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IWb-fg-ci6">
+                    <rect key="frame" x="30" y="140" width="315" height="220"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="220" id="WEL-Ub-U9h"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Gib-gg-Kkr" secondAttribute="trailing" id="1Nd-Hp-JJQ"/>
+                <constraint firstItem="xHE-tx-vwy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="NlT-Pl-EUI"/>
+                <constraint firstItem="IWb-fg-ci6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="SXL-oH-je3"/>
+                <constraint firstAttribute="bottom" secondItem="Gib-gg-Kkr" secondAttribute="bottom" id="aE2-QG-9wi"/>
+                <constraint firstItem="IWb-fg-ci6" firstAttribute="top" secondItem="xHE-tx-vwy" secondAttribute="bottom" constant="60" id="d04-pj-YOl"/>
+                <constraint firstItem="Gib-gg-Kkr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="f9V-iv-eho"/>
+                <constraint firstItem="xHE-tx-vwy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hZL-hH-6iB"/>
+                <constraint firstAttribute="trailing" secondItem="IWb-fg-ci6" secondAttribute="trailing" constant="30" id="jrY-cY-jXL"/>
+                <constraint firstAttribute="trailing" secondItem="xHE-tx-vwy" secondAttribute="trailing" id="xAU-MP-Xfk"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="628.5" y="132.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="scan_close_flash_lamp" width="32" height="32"/>
+        <image name="scan_edit_code" width="32" height="32"/>
+        <image name="scan_open_flash_lamp" width="32" height="32"/>
+    </resources>
+</document>

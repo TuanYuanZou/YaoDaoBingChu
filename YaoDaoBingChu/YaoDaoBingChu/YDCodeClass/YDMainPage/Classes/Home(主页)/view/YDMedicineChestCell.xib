@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MedicineChest" id="gTV-IL-0wX" customClass="YDMedicineChestCell">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EBe-xS-LGz">
+                        <rect key="frame" x="5" y="5" width="170" height="115"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifD-Ad-pQz">
+                        <rect key="frame" x="0.0" y="130" width="180" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WiZ-tm-kSz">
+                        <rect key="frame" x="150" y="157" width="22" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="9z0-Ar-pfk"/>
+                            <constraint firstAttribute="height" constant="15" id="TIA-lc-kW0"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kDy-Cq-a4f">
+                        <rect key="frame" x="5" y="155" width="0.0" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="RGQ-bn-J3r"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="1" green="0.18061961330000001" blue="0.31457841619999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="EBe-xS-LGz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="5hC-m5-nw5"/>
+                <constraint firstAttribute="bottom" secondItem="kDy-Cq-a4f" secondAttribute="bottom" constant="5" id="IZp-ez-9hG"/>
+                <constraint firstAttribute="bottom" secondItem="WiZ-tm-kSz" secondAttribute="bottom" constant="8" id="Kjh-L3-QVc"/>
+                <constraint firstAttribute="trailing" secondItem="WiZ-tm-kSz" secondAttribute="trailing" constant="8" id="NLT-3V-EsC"/>
+                <constraint firstItem="ifD-Ad-pQz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="R5g-Ja-aFF"/>
+                <constraint firstItem="ifD-Ad-pQz" firstAttribute="top" secondItem="EBe-xS-LGz" secondAttribute="bottom" constant="10" id="RqQ-FG-3jD"/>
+                <constraint firstItem="EBe-xS-LGz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="XNF-FV-SQA"/>
+                <constraint firstItem="WiZ-tm-kSz" firstAttribute="top" secondItem="ifD-Ad-pQz" secondAttribute="bottom" constant="7" id="Zb7-hu-H8H"/>
+                <constraint firstAttribute="bottom" secondItem="ifD-Ad-pQz" secondAttribute="bottom" constant="30" id="nqs-oT-8UU"/>
+                <constraint firstAttribute="bottom" secondItem="EBe-xS-LGz" secondAttribute="bottom" constant="60" id="pRG-Hn-9DV"/>
+                <constraint firstAttribute="trailing" secondItem="EBe-xS-LGz" secondAttribute="trailing" constant="5" id="tNV-XP-Luc"/>
+                <constraint firstItem="kDy-Cq-a4f" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="tpa-Fz-WZl"/>
+                <constraint firstItem="kDy-Cq-a4f" firstAttribute="top" secondItem="ifD-Ad-pQz" secondAttribute="bottom" constant="5" id="wb1-tG-3az"/>
+                <constraint firstAttribute="trailing" secondItem="ifD-Ad-pQz" secondAttribute="trailing" id="wp5-Q8-7rj"/>
+            </constraints>
+            <size key="customSize" width="272" height="226"/>
+            <connections>
+                <outlet property="medicineChestPic" destination="EBe-xS-LGz" id="PZo-eD-GuD"/>
+                <outlet property="medicineChestPrice" destination="kDy-Cq-a4f" id="CYe-qg-wO8"/>
+                <outlet property="otc" destination="WiZ-tm-kSz" id="wsh-hN-v3b"/>
+                <outlet property="titleLabel" destination="ifD-Ad-pQz" id="YxO-02-jXl"/>
+            </connections>
+            <point key="canvasLocation" x="715" y="363"/>
+        </collectionViewCell>
+    </objects>
+</document>
